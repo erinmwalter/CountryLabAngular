@@ -1,0 +1,13 @@
+<h4 class="title">Suggested Countries</h4>
+<div *ngFor="let country of Countries">
+        <div class="card">
+            <h4 class="card-title">{{country.name}}</h4>
+            <div>Official Language(s): {{country.language}}</div>
+            <div class="row flagBorder">
+                <div class="col-sm flag" style="background-color:{{country.colors[0]}}"> </div>
+                <div class="col-sm flag" style="background-color:{{country.colors[1]}}"> </div>
+                <div class="col-sm flag" *ngIf="country.colors[2]" style="background-color:{{country.colors[2]}}"> </div>
+            </div>
+            <div><button id="countrySelection" value="{{country.id}}" (click)="onSelect(country)" class="btn btn-light">Details</button></div>
+        </div>
+    </div>

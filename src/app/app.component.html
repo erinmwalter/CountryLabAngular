@@ -1,0 +1,10 @@
+<nav class="navbar navbar-light bg-light ">
+  <h2 class="navbar-text">The Countries App</h2>
+  <input class="search" type="text" id="countrySearch"/>
+  <button class="btn btn-light" (click)=searchForCountry()>Search</button>
+  <a class="navbar-brand" routerLink ="list">Country List</a>
+</nav>
+
+<div>
+<router-outlet></router-outlet>
+</div>

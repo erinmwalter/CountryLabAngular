@@ -1,0 +1,49 @@
+.flagBorder{
+    border: black 2px solid;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.flag{
+    height:50px;
+}
+
+.card{
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto; 
+    margin-top:10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #b1a5a5;
+}
+
+.btn{
+    border: black 1px solid;
+    margin-top: 10px
+}
+
+.countryFlag{
+    width:70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.coatOfArms{
+    width:40%;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+p{
+    font-style:italic;
+}
+
+h4{
+    font-weight: bold;
+}
+
+.card{
+    border-radius: 20px;
+}

@@ -1,0 +1,16 @@
+<div *ngIf="selectedCountry">
+    <div class="card">
+        <h4 class="card-title">{{selectedCountry[0].name?.common}}</h4>
+        <p *ngIf="selectedCountry[0].capital">Capital City: {{selectedCountry[0].capital}}</p>
+        <p *ngIf="selectedCountry[0].subregion">Region: {{selectedCountry[0].subregion}}</p>
+        <a href="{{selectedCountry[0].maps?.googleMaps}}">Google Maps Link</a>
+        <br/>
+        <p>Flag:</p>
+        <img class="countryFlag" src="{{selectedCountry[0].flags?.png}}"/>
+        <br/>
+        <p>Coat of Arms:</p>
+        <img class="coatOfArms" src="{{selectedCountry[0].coatOfArms?.png}}"/>
+    </div>
+</div>
+<br/>
+<button (click)="goBack()" class="btn btn-light">Go Back</button>
